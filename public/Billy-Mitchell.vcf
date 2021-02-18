@@ -1,0 +1,16 @@
+
+                    BEGIN:VCARD
+                    VERSION:3.0
+                    PRODID:-//Apple Inc.//iPhone OS 13.1.3//EN
+                    N:Billy;Mitchell;;;
+                    FN:Billy Mitchell
+                    ORG:William Mitchell;
+                    EMAIL;type=INTERNET;type=HOME;type=pref:hello@billymitchell.design
+                    TEL;type=CELL;type=VOICE;type=pref:(443) 765 - 8265
+                    X-SOCIALPROFILE;type=twitter:/
+                    X-SOCIALPROFILE;type=linkedin:/
+                    item1.URL;type=pref:/
+                    item1.X-ABLabel:_$!<HomePage>!$_
+                    PHOTO;ENCODING=b:
+                    END:VCARD
+                    
