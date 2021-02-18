@@ -33,8 +33,7 @@ export default function Home() {
     setState(
       { ...state, [e.target.name]: e.target.value }
     )
-    console.log("state: ", { ...state }.first_name);
-    console.log("state: ", { ...state }.last_name);
+    console.log({ ...state });
   }
 
   const [first_nameLink, setFirst_nameLink] = useState("")
@@ -73,8 +72,8 @@ export default function Home() {
         .then(() => {
           setFirst_nameLink({ ...state }.first_name)
           setLast_nameLink({ ...state }.last_name)
-          console.log(first_nameLink)
-          console.log(last_nameLink)
+          console.log("first_nameLink: ", first_nameLink)
+          console.log("last_nameLink: ", last_nameLink)
         })
         .catch(error => console.error('Error!', error.message))
     ])
@@ -89,7 +88,7 @@ export default function Home() {
 
       <div className="h-screen w-screen flex items-center dark:bg-gray-800">
         <div className="container max-width prose mx-auto ">
-          <h1 className="dark:text-white">vCard Generator</h1>
+          <h1><span className="dark:text-white">vCard Generator</span></h1>
           <p className="dark:text-white">Type in your information and hit submit. Then click the link bellow to download your vCard.</p>
           <form
             className="contact"
@@ -193,11 +192,10 @@ export default function Home() {
             {initCardLink()}
           </div>
         </div>
-
+        <footer className="absolute bottom-0 p-2 flex content-center w-full">
+          <div className="dark:text-white w-full text-center block">Created By Billy Mitchell | Built with: Next.js & Tailwind CSS</div>
+        </footer>
       </div>
-      <footer className="absolute bottom-0 p-2 flex content-center w-full text-center">
-        <div className="dark:text-white flex content-center w-full text-center">Created By Billy Mitchell | Built with: Next.js & Tailwind CSS</div>
-      </footer>
     </>
   )
 }

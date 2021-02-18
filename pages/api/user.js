@@ -28,7 +28,7 @@ export default function handler(req, res) {
                     `
             , function (err) {
                 if (err) throw err;
-                console.log('Saved!');
+                console.log(err);
             })
     } else {
         // Handle any other HTTP method
